@@ -1,0 +1,13 @@
+yonca_t1:
+  - vertical:
+      ratio: 0.5
+      panes:
+        - cmd: ssh -t tutelserver1 "cd ~/Desktop/yonca/work; bash --login"
+        - cmd: ssh -t tutelserver1 "cd ~/Desktop/yonca/submodules/verification; bash --login"
+
+yonca_t3:
+  - vertical:
+      ratio: 0.5
+      panes:
+        - cmd: ssh -t tutelserver3 "cd ~/Desktop/yonca/work; bash --login"
+        - cmd: ssh -t tutelserver3 "cd ~/Desktop/yonca/submodules/verification; bash --login"
