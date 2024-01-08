@@ -117,10 +117,8 @@ if ! shopt -oq posix; then
 fi
 
 shopt -s autocd
-alias ch='chezmoi'
-alias cha='chezmoi add'
 export PATH="/opt/riscv/bin:$PATH"
 export PATH="/opt/freedownloadmanager:$PATH"
 
-eval "$(oh-my-posh init bash --config /home/omer.ergul/.config/poshthemes/tokyo.omp.json)"
-alias config='/usr/bin/git --git-dir=/home/omer.ergul/dotfiles/ --work-tree=/home/omer.ergul'
+eval "$(oh-my-posh init bash --config $HOME/.config/poshthemes/tokyo.omp.json)"
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
