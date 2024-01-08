@@ -10,8 +10,9 @@ super + Return
 super + p
 	rofi -combi-modi window,drun,run,ssh -theme Monokai -font "JetBrainsMono Nerd Font 12" -show combi -icon-theme "Papirus" -show-icons
 
+#rofi -modi "file-browser:rofi-file-browser.sh" -show file-browser -theme Monokai -font "JetBrainsMono Nerd Font 12"
 super + f
-	rofi -modi "file-browser:rofi-file-browser.sh" -show file-browser -theme Monokai -font "JetBrainsMono Nerd Font 12"
+	terminator -e ranger
 
 super + shift + s
 	flameshot gui
