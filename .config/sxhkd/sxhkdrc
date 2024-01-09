@@ -10,7 +10,7 @@ super + Return
 super + p
 	rofi -show combi
 
-#rofi -modi "file-browser:rofi-file-browser.sh" -show file-browser -theme Monokai -font "JetBrainsMono Nerd Font 12"
+#rofi -modi "file-browser:rofi-file-browser" -show file-browser -theme Monokai -font "JetBrainsMono Nerd Font 12"
 super + f
 	terminator -e ranger
 
