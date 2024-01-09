@@ -10,7 +10,7 @@ xrandr --output DisplayPort-4 --gamma 1.0:0.95:0.85 --brightness 0.80 &
 pgrep -x sxhkd > /dev/null || sxhkd &
 ~/.config/polybar/polybar.launch.sh &
 ~/.fehbg &
-picom -b &
+picom &
 dunst -conf ~/.config/dunst/dunstrc & 
 xsetroot -cursor_name left_ptr &
 numlockx on &
