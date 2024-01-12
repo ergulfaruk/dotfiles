@@ -19,7 +19,7 @@ rm freedownloadmanager.deb
 nala --install-completion
 
 sudo nala update
-sudo nala install $(cat .apt.list)
+sudo nala install $(cat .pkg_list)
 pip install terminator-layout-builder
 
 echo "dotfiles" >> .gitignore
