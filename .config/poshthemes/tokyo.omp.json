@@ -5,7 +5,7 @@
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#7eb8da",
+          "foreground": "#F0C674",
           "style": "plain",
           "template": "[{{ .UserName }}@<#ffffff>{{ .HostName }}</>]",
           "type": "session"
@@ -18,28 +18,12 @@
           "template": "\uf0e7",
           "type": "root"
         },
-        //{
-        //  "foreground": "#7eb8da",
-        //  "properties": {
-        //    "time_format": "Monday at 3:04:05 PM"
-        //  },
-        //  "style": "diamond",
-        //  "template": "[{{ .CurrentDate | date .Format }}]",
-        //  "type": "time"
-        //},
         {
-          "foreground": "#ffa5d8",
+          "foreground": "#F0C674",
           "style": "plain",
           "template": "[\uf0e7]",
           "type": "root"
         }
-        //,
-        //{
-        //  "foreground": "#ffa5d8",
-        //  "style": "powerline",
-        //  "template": "[<#ffffff>\uea6c</> Error, check your command]",
-        //  "type": "status"
-        //}
       ],
       "type": "prompt"
     },
@@ -47,7 +31,7 @@
       "alignment": "right",
       "segments": [
         {
-          "foreground": "#be9ddf",
+          "foreground": "#F0C674",
           "properties": {
             "style": "dallas",
             "threshold": 0
@@ -57,7 +41,7 @@
           "type": "executiontime"
         },
         {
-          "foreground": "#be9ddf",
+          "foreground": "#F0C674",
           "style": "diamond",
           "template": "[{{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB]",
           "type": "sysinfo"
@@ -70,16 +54,16 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#7eb8da",
+          "foreground": "#F0C674",
           "properties": {
             "style": "full"
           },
           "style": "plain",
-          "template": "[<#98bfad>{{ .Path }}</>]",
+          "template": "[<#FFFFFF>{{ .Path }}</>]",
           "type": "path"
         },
         {
-          "foreground": "#ffa5d8",
+          "foreground": "#F0C674",
           "properties": {
             "fetch_stash_count": true,
             "fetch_status": true,
@@ -97,7 +81,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#7eb8da",
+          "foreground": "#F0C674",
           "style": "plain",
           "template": "",
           "type": "text"
