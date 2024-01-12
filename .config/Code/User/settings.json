@@ -4,5 +4,7 @@
     "workbench.iconTheme": "file-icons",
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.tabSize": 2,
-    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font"
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "window.zoomLevel": 1,
+    "git.confirmSync": false
 }
