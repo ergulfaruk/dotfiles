@@ -7,10 +7,11 @@ xrandr --output DisplayPort-4 --mode 1920x1080 --pos 1920x0 &
 xrandr --output DisplayPort-3 --gamma 1.0:0.95:0.85 --brightness 0.80 &
 xrandr --output DisplayPort-4 --gamma 1.0:0.95:0.85 --brightness 0.80 &
 
+lxpolkit &
 pgrep -x sxhkd > /dev/null || sxhkd &
 ~/.config/polybar/polybar.launch.sh &
 ~/.fehbg &
-picom &
+#picom &
 dunst -conf ~/.config/dunst/dunstrc & 
 xsetroot -cursor_name left_ptr &
 numlockx on &
@@ -38,3 +39,10 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+
+bspc rule -a "WatchList" state=floating
+bspc rule -a "Console" state=floating
+bspc rule -a "WaveWindow" state=floating
+bspc rule -a "Dialog" state=floating center=on
+bspc rule -a "Toplevel" state=floating center=on
+bspc rule -a "Terminator Preferences" state=floating center=on
