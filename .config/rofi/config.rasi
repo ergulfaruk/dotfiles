@@ -1,0 +1,11 @@
+configuration {
+ modi: "drun,run,ssh,combi";
+ font: "JetBrainsMono Nerd Font 12";
+ combi-modi: "drun,run,ssh";
+ show-icons: true;
+ icon-theme: "Papirus";
+ display-drun:"";
+ display-run:"";
+ display-ssh:"";
+ }
+@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
