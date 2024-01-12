@@ -11,7 +11,7 @@ lxpolkit &
 pgrep -x sxhkd > /dev/null || sxhkd &
 ~/.config/polybar/polybar.launch.sh &
 ~/.fehbg &
-#picom &
+picom &
 dunst -conf ~/.config/dunst/dunstrc & 
 xsetroot -cursor_name left_ptr &
 numlockx on &
