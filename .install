@@ -1,5 +1,13 @@
 sudo apt install nala -y
 
+echo "dotfiles" > .gitignore
+git clone --bare git@github.com:ergulfaruk/dotfiles.git $HOME/dotfiles
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
+config config --local status.showUntrackedFiles no
+config checkout
+config stash
+config pull
+
 echo "deb https://mirror.kapteyan.com.tr/ubuntu/ jammy main restricted universe multiverse" | sudo tee /etc/apt/sources.list.d/nala-sources.list
 echo "deb http://ubuntu.vargonen.com/ubuntu/ jammy main restricted universe multiverse" | sudo tee /etc/apt/sources.list.d/nala-sources.list
 echo "deb https://kozyatagi.mirror.guzel.net.tr/ubuntu/ jammy main restricted universe multiverse" | sudo tee /etc/apt/sources.list.d/nala-sources.list
@@ -16,16 +24,8 @@ wget https://files2.freedownloadmanager.org/6/latest/freedownloadmanager.deb
 sudo dpkg -i freedownloadmanager.deb
 rm freedownloadmanager.deb
 
-nala --install-completion
-
 sudo nala update
 sudo nala install $(cat .pkg_list)
 pip install terminator-layout-builder
 
-echo "dotfiles" >> .gitignore
-git clone --bare git@github.com:ergulfaruk/dotfiles.git $HOME/dotfiles
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
-config config --local status.showUntrackedFiles no
-config checkout
-config stash
-config pull
+
