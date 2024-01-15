@@ -24,6 +24,9 @@ wget https://files2.freedownloadmanager.org/6/latest/freedownloadmanager.deb
 sudo dpkg -i freedownloadmanager.deb
 rm freedownloadmanager.deb
 
+curl -s https://ohmyposh.dev/install.sh | sudo bash -s
+oh-my-posh font install JetBrainsMono
+
 sudo nala update
 sudo nala install $(cat .pkg_list)
 pip install terminator-layout-builder
