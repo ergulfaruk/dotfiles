@@ -3,5 +3,5 @@
 cd
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 config add $@
-config commit -m "config $@"
+config commit -m "config updated:"
 config push
