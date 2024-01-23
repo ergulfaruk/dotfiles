@@ -40,9 +40,9 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-bspc rule -a "WatchList" state=floating
-bspc rule -a "Console" state=floating
-bspc rule -a "WaveWindow" state=floating
+#bspc rule -a "WatchList" state=floating
+#bspc rule -a "Console" state=floating
+#bspc rule -a "WaveWindow" state=floating
 bspc rule -a "Dialog" state=floating center=on
 bspc rule -a "Toplevel" state=floating center=on
 bspc rule -a "Terminator Preferences" state=floating center=on

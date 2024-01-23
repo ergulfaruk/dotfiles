@@ -12,7 +12,7 @@
     background_darkness = 0.75
     background_type = transparent
     cursor_color = "#aaaaaa"
-    font = JetBrainsMono Nerd Font Mono Semi-Bold 14
+    font = JetBrainsMono Nerd Font Mono Light 12
     show_titlebar = False
     use_system_font = False
 [layouts]
@@ -37,13 +37,13 @@
     [[[terminal3]]]
       parent = vpaned2
       type = Terminal
-      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver1 \"cd ~/Desktop/yonca/work; bash --login\""'
+      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver1 \"cd ~/Desktop/yonca/work; zsh --login\""'
       profile = default
       order = 0
     [[[terminal4]]]
       parent = vpaned2
       type = Terminal
-      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver1 \"cd ~/Desktop/yonca/submodules/verification; bash --login\""'
+      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver1 \"cd ~/Desktop/yonca/submodules/verification; zsh --login\""'
       profile = default
       order = 1
   [[yonca_t3]]
@@ -59,13 +59,35 @@
     [[[terminal3]]]
       parent = vpaned2
       type = Terminal
-      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver3 \"cd ~/Desktop/yonca/work; bash --login\""'
+      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver3 \"cd ~/Desktop/yonca/work; zsh --login\""'
       profile = default
       order = 0
     [[[terminal4]]]
       parent = vpaned2
       type = Terminal
-      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver3 \"cd ~/Desktop/yonca/submodules/verification; bash --login\""'
+      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver3 \"cd ~/Desktop/yonca/submodules/verification; zsh --login\""'
+      profile = default
+      order = 1
+  [[yonca_soc_t1]]
+    [[[window1]]]
+      parent = ""
+      type = Window
+      id = window1
+    [[[vpaned2]]]
+      parent = window1
+      type = VPaned
+      id = vpaned2
+      ratio = 0.5
+    [[[terminal3]]]
+      parent = vpaned2
+      type = Terminal
+      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver1 \"cd ~/Desktop/yonca_soc/sim; zsh --login\""'
+      profile = default
+      order = 0
+    [[[terminal4]]]
+      parent = vpaned2
+      type = Terminal
+      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver1 \"cd ~/Desktop/yonca_soc/sim; zsh --login\""'
       profile = default
       order = 1
 [plugins]

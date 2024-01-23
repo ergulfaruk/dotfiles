@@ -5,6 +5,9 @@
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.tabSize": 2,
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-    "window.zoomLevel": 1,
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
+    "editor.minimap.enabled": false,
+    "git.suggestSmartCommit": false
 }

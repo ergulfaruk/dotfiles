@@ -1,11 +1,12 @@
 configuration {
- modi: "drun,run,ssh,combi";
+ modi: "drun,run,ssh,combi,vnc:~/.config/rofi/remote.sh";
  font: "JetBrainsMono Nerd Font 12";
- combi-modi: "drun,run,ssh";
+ combi-modi: "drun,run,ssh,vnc";
  show-icons: true;
  icon-theme: "Papirus";
  display-drun:"";
- display-run:"";
- display-ssh:"";
+ display-run:"run";
+ display-ssh:"ssh";
+ display-vnc:"vnc";
  }
 @theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
