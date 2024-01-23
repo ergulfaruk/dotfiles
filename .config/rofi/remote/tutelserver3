@@ -1,0 +1,2 @@
+#!/bin/bash
+xtigervncviewer tutelserver3:7 -passwd ~/.vnc/passwd &
