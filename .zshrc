@@ -80,4 +80,4 @@ zstyle ':completion:*:ssh:*:users' hidden true
 #
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
+alias ohmyzsh="vim ~/.config/.oh-my-zsh"
