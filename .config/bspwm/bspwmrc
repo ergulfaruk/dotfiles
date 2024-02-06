@@ -1,16 +1,16 @@
 #! /bin/sh
 
 # display positions
-xrandr --output DisplayPort-3 --primary --mode 1920x1080 --pos 0x0 &
-xrandr --output DisplayPort-4 --mode 1920x1080 --pos 1920x0 &
+xrandr --output DisplayPort-3 --gamma 1.0:0.95:0.85 --brightness 0.8 --primary --mode 1920x1080 --pos 0x0 &
+xrandr --output DisplayPort-4 --gamma 1.0:0.95:0.85 --brightness 0.8 --mode 1920x1080 --pos 1920x0 &
 # display bright and gamma
-xrandr --output DisplayPort-3 --gamma 1.0:0.95:0.85 --brightness 0.80 &
-xrandr --output DisplayPort-4 --gamma 1.0:0.95:0.85 --brightness 0.80 &
+# xrandr --output DisplayPort-3 --gamma 1.0:0.95:0.85 --brightness 0.70 &
+# xrandr --output DisplayPort-4 --gamma 1.0:0.95:0.85 --brightness 0.70 &
 
 lxpolkit &
 pgrep -x sxhkd > /dev/null || sxhkd &
 ~/.config/polybar/polybar.launch.sh &
-~/.fehbg &
+nitrogen --restore &
 picom &
 dunst -conf ~/.config/dunst/dunstrc & 
 xsetroot -cursor_name left_ptr &
@@ -23,7 +23,7 @@ bspc monitor DisplayPort-3 -d 1 2 3 4
 bspc config border_width         1
 bspc config window_gap           6
 
-bspc config focused_border_color      '#F0C674'
+bspc config focused_border_color      '#8ec07c'
 bspc config normal_border_color       '#282828'
 bspc config active_border_color       '#3c3836'
 
