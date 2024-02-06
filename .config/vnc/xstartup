@@ -2,6 +2,6 @@
 
 xsetroot -solid grey &
 xhost +si:localuser:$USER &
-systemctl --user mask xdg-desktop-portal-gnome.service &
-systemctl --user mask xdg-desktop-portal-gtk.service &
+#systemctl --user mask xdg-desktop-portal-gnome.service &
+#systemctl --user mask xdg-desktop-portal-gtk.service &
 bspwm 
