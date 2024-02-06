@@ -9,5 +9,8 @@
     "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": true,
     "editor.minimap.enabled": false,
-    "git.suggestSmartCommit": false
+    "git.suggestSmartCommit": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "search.useIgnoreFiles": false,
+    "explorer.autoReveal": false
 }
