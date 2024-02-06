@@ -10,9 +10,12 @@ super + Return
 super + p
 	rofi -show combi
 
-#rofi -modi "file-browser:rofi-file-browser" -show file-browser -theme Monokai -font "JetBrainsMono Nerd Font 12"
 super + f
 	terminator -e ranger
+  #rofi -modi "file-browser:rofi-file-browser" -show file-browser -theme Monokai -font "JetBrainsMono Nerd Font 12"
+
+super + c
+	terminator -e qalc 
 
 super + shift + s
 	flameshot gui
@@ -36,10 +39,6 @@ super + shift + c
 # alternate between the tiled and monocle layout
 super + m
 	bspc desktop -l next
-
-# swap the current node and the biggest window
-super + g
-	bspc node -s biggest.window
 
 #
 # state/flags
