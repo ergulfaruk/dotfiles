@@ -11,4 +11,5 @@ configuration {
  display-ssh:"ssh";
  display-vnc:"vnc";
  }
-@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
+//@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
+@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
