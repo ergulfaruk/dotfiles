@@ -1,7 +1,7 @@
 {
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     "workbench.productIconTheme": "fluent-icons",
-    "workbench.iconTheme": "file-icons",
+    "workbench.iconTheme": "gruvbox-material-icon-theme",
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.tabSize": 2,
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
