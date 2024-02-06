@@ -11,3 +11,6 @@ scp .ssh/authorized_keys tutelserver3:.ssh/authorized_keys
 scp .ssh/config tutelserver4:.ssh/config
 scp .ssh/authorized_keys tutelserver4:.ssh/authorized_keys
 
+scp .ssh/config tutelserver5:.ssh/config
+scp .ssh/authorized_keys tutelserver5:.ssh/authorized_keys
+
