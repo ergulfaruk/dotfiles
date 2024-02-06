@@ -1,8 +1,10 @@
 configuration {
- modi: "drun,run,ssh,combi,vnc:~/.config/rofi/remote.sh";
+ modi: "drun,combi,ssh,vnc:~/.config/rofi/remote.sh,run";
  font: "JetBrainsMono Nerd Font 12";
- combi-modi: "drun,run,ssh,vnc";
+ combi-modi: "drun,ssh,vnc,run";
  show-icons: true;
+ matching: "fuzzy";
+ tokenize: true;
  icon-theme: "Papirus";
  display-drun:"";
  display-run:"run";
