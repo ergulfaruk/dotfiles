@@ -12,6 +12,20 @@ yonca_soc_t1:
         - cmd: ssh -t tutelserver1 "cd ~/Desktop/yonca_soc/sim; zsh --login"
         - cmd: ssh -t tutelserver1 "cd ~/Desktop/yonca_soc/sim; zsh --login"
 
+yonca_t5:
+  - vertical:
+      ratio: 0.5
+      panes:
+        - cmd: ssh -t tutelserver5 "cd ~/Desktop/yonca_soc/rtl/core/yonca/work; bash --login"
+        - cmd: ssh -t tutelserver5 "cd ~/Desktop/yonca_soc/rtl/core/yonca/submodules/verification; bash --login"
+
+yonca_soc_t5:
+  - vertical:
+      ratio: 0.5
+      panes:
+        - cmd: ssh -t tutelserver5 "cd ~/Desktop/yonca_soc/sim; bash --login"
+        - cmd: ssh -t tutelserver5 "cd ~/Desktop/yonca_soc/sim; bash --login"
+
 yonca_t3:
   - vertical:
       ratio: 0.5
