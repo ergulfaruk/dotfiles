@@ -12,11 +12,11 @@
     background_darkness = 0.75
     background_type = transparent
     cursor_color = "#aaaaaa"
-    font = JetBrainsMono Nerd Font Mono Light 12
+    font = JetBrainsMono Nerd Font Mono 11
     foreground_color = "#ffffff"
     show_titlebar = False
     scrollback_lines = 5000
-    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
     use_system_font = False
 [layouts]
   [[default]]
@@ -106,13 +106,13 @@
     [[[terminal3]]]
       parent = vpaned2
       type = Terminal
-      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver5 \"cd ~/Desktop/yonca_soc/rtl/core/yonca/work; bash --login\""'
+      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver5 \"cd ~/Desktop/yonca_soc/rtl/core/yonca/work; zsh --login\""'
       profile = default
       order = 0
     [[[terminal4]]]
       parent = vpaned2
       type = Terminal
-      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver5 \"cd ~/Desktop/yonca_soc/rtl/core/yonca/submodules/verification; bash --login\""'
+      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver5 \"cd ~/Desktop/yonca_soc/rtl/core/yonca/submodules/verification; zsh --login\""'
       profile = default
       order = 1
   [[yonca_soc_t5]]
@@ -128,13 +128,13 @@
     [[[terminal3]]]
       parent = vpaned2
       type = Terminal
-      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver5 \"cd ~/Desktop/yonca_soc/sim; bash --login\""'
+      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver5 \"cd ~/Desktop/yonca_soc/sim; zsh --login\""'
       profile = default
       order = 0
     [[[terminal4]]]
       parent = vpaned2
       type = Terminal
-      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver5 \"cd ~/Desktop/yonca_soc/sim; bash --login\""'
+      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver5 \"cd ~/Desktop/yonca_soc/sim; zsh --login\""'
       profile = default
       order = 1
 [plugins]
