@@ -7,16 +7,16 @@ from unicodedata import east_asian_width
 # Config options
 
 # (int) : Length of media info string. If length of string exceedes this value, the text will scroll. Default value is 20
-message_display_len = 25
+message_display_len = 15
 
 # (int) : Font index of polybar. this value should be 1 more than the font value specified in polybar config.
-font_index = 1
+font_index = 2
 
 # (float) : Update speed of the text in seconds.
-update_delay = 1
+update_delay = 0.3
 
 # (list) : list of chars containing previous, play, pause, next glyphs for media controls in respective order
-control_chars = ['','','','']
+control_chars = ['󰒮','','󰓛','󰒭']
 
 # (dict) : dict of char icons to display as prefix.
 # If player name is available as key, then use the corressponding icon,
@@ -25,6 +25,7 @@ control_chars = ['','','','']
 display_player_prefix = {
     "spotify":  '',
     "brave.instance2311":  '',
+    "firefox":  '',
     "default":  ''
 }
 
@@ -201,7 +202,7 @@ def print_text():
         "%{F#8ec07c}"+ display_prefix + "%{F-}" + " " +
         "%%{T%d}" % (font_index) +
         make_visual_len(display_text, message_display_len) +
-        "%{T-}" + "| " +  "%{F#8ec07c}"+ display_suffix + "%{F-}", flush=True)
+        "%{T-}" + "  %{F#8ec07c}"+ display_suffix + "%{F-}", flush=True)
 
 def main():
     global current_player, players

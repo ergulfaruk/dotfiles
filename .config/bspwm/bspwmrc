@@ -33,6 +33,12 @@ bspc config gapless_monocle       true
 bspc config focus_follows_pointer true
 bspc config focus_by_distance     true
 
+bspc config automatic_scheme spiral
+bspc config initial_polarity first_child
+bspc config removal_adjustment true
+
+# how much of the screen the "master" takes by default
+
 bspc rule -a \* center=on
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
