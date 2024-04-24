@@ -10,18 +10,25 @@ xrandr --output DisplayPort-4 --gamma 1.0:0.95:0.85 --brightness 0.70 --mode 192
 lxpolkit &
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x dunst > /dev/null || dunst -conf ~/.config/dunst/dunstrc & 
-~/.config/polybar/polybar.launch.sh &
 nitrogen --restore &
 pgrep -x picom > /dev/null || picom &
 xsetroot -cursor_name left_ptr &
 numlockx on &
 
-bspc monitor VNC-0         -d 1 2 3 4
-bspc monitor DisplayPort-4 -d 1 2 3 4
-bspc monitor DisplayPort-3 -d 1 2 3 4
+if type "xrandr"; then
+  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+    bspc monitor $m -d 1 2 3 4
+  done
+fi
+
+~/.config/polybar/polybar.launch.sh &
+~/.config/bspwm/scripts/monitor.sh &
 
 bspc config border_width         1
 bspc config window_gap           2
+
+bspc config remove_disabled_monitors true
+bspc config remove_unplugged_monitors true
 
 bspc config focused_border_color      '#8ec07c'
 bspc config normal_border_color       '#282828'
