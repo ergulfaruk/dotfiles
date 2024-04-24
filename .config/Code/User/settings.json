@@ -1,7 +1,6 @@
 {
-    "workbench.colorTheme": "Gruvbox Dark Hard",
     "workbench.productIconTheme": "fluent-icons",
-    "workbench.iconTheme": "gruvbox-material-icon-theme",
+    "workbench.iconTheme": "file-icons",
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.tabSize": 2,
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
@@ -14,5 +13,13 @@
     "search.useIgnoreFiles": false,
     "explorer.autoReveal": false,
     "terminal.integrated.defaultProfile.linux": "zsh",
-    "workbench.sideBar.location": "right"
+    "workbench.sideBar.location": "right",
+    "explorer.confirmDelete": false,
+    "workbench.colorTheme": "Monokai",
+    "workbench.tree.enableStickyScroll": false,
+    "terminal.integrated.enablePersistentSessions": false,
+    "workbench.editorLargeFileConfirmation": 100,
+    "files.associations": {
+        "*.sv": "systemverilog"
+    }
 }
