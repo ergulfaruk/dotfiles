@@ -1,0 +1,8 @@
+# Sources file built for nala
+
+deb http://ubuntu.vargonen.com/ubuntu/ jammy main restricted universe multiverse
+
+deb https://ftp.linux.org.tr/ubuntu/ jammy main restricted universe multiverse
+
+deb https://kozyatagi.mirror.guzel.net.tr/ubuntu/ jammy main restricted universe multiverse
+
