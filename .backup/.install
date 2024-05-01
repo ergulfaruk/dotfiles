@@ -1,0 +1,29 @@
+sudo apt install nala -y
+
+sudo nala install git curl -y
+
+echo "dotfiles" > .gitignore
+git clone --bare git@github.com:ergulfaruk/dotfiles.git $HOME/dotfiles
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
+config config --local status.showUntrackedFiles no
+config checkout
+config stash
+config pull
+
+wget https://files2.freedownloadmanager.org/6/latest/freedownloadmanager.deb
+sudo dpkg -i freedownloadmanager.deb
+rm freedownloadmanager.deb
+
+curl -s https://ohmyposh.dev/install.sh | sudo bash -s
+pip install terminator-layout-builder
+
+
+sudo apt-key add ~/.backup/Repo.keys
+sudo cp -R ~/.backup/sources.list* /etc/apt/
+sudo apt-get update
+sudo apt-get install dselect
+sudo dselect update
+sudo dpkg --set-selections < ~/.backup/Package.list
+sudo apt-get dselect-upgrade -y
+
+
