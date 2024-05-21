@@ -15,10 +15,31 @@
     "explorer.confirmDelete": false,
     "workbench.productIconTheme": "fluent-icons",
     "workbench.sideBar.location": "right",
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     "workbench.tree.enableStickyScroll": false,
     "workbench.editorLargeFileConfirmation": 100,
     "workbench.startupEditor": "none",
     "git.autofetch": true,
-    "remote.SSH.useExecServer": false
+    "remote.SSH.useExecServer": false,
+    "systemverilog.formatCommand": "verible-verilog-format --column_limit 200 --assignment_statement_alignment infer --case_items_alignment align --module_net_variable_alignment align --named_parameter_alignment align --named_port_alignment align --named_port_indentation wrap --port_declarations_alignment infer",
+    "systemverilog.excludeIndexing": "**/*.v",
+    "editor.detectIndentation": false,
+    "files.autoSave": "afterDelay",
+    "editor.folding": false,
+    "editor.foldingHighlight": false,
+    "editor.glyphMargin": false,
+    "systemverilog.documentSymbolsPrecision": "full_no_references",
+    "systemverilog.includeIndexing": [
+      "**/*.{sv,svh}"
+    ],
+    "systemverilog.disableIndexing": true,
+    "systemverilog.enableIncrementalIndexing": false,
+    "search.exclude": {        
+      "mapped/**/*": true,
+      "work/dcnx*/**/*":true
+    },
+    "files.associations": {
+      "*.do": "tcl"
+    },
+    "workbench.iconTheme": "gruvbox-material-icon-theme"
 }

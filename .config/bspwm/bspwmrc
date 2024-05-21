@@ -7,11 +7,16 @@ xrandr --output DisplayPort-4 --gamma 1.0:0.95:0.85 --brightness 0.70 --mode 192
 # xrandr --output DisplayPort-3 --gamma 1.0:0.95:0.85 --brightness 0.70 &
 # xrandr --output DisplayPort-4 --gamma 1.0:0.95:0.85 --brightness 0.70 &
 
-lxpolkit &
-pgrep -x sxhkd > /dev/null || sxhkd &
-pgrep -x dunst > /dev/null || dunst -conf ~/.config/dunst/dunstrc & 
+pgrep -x sxhkd | xargs kill
+sxhkd &
+pgrep -x dunst | xargs kill
+dunst -conf ~/.config/dunst/dunstrc & 
+pgrep -x nitrogen | xargs kill
 nitrogen --restore &
-pgrep -x picom > /dev/null || picom &
+pgrep -x picom | xargs kill
+picom &
+
+lxpolkit &
 xsetroot -cursor_name left_ptr &
 numlockx on &
 
@@ -21,7 +26,9 @@ if type "xrandr"; then
   done
 fi
 
+pgrep -x polybar.launch.sh | xargs kill
 ~/.config/polybar/polybar.launch.sh &
+pgrep -x monitor.sh | xargs kill
 ~/.config/bspwm/scripts/monitor.sh &
 
 bspc config border_width         1
