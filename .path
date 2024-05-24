@@ -1,0 +1,5 @@
+export PATH=$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH="/opt/riscv/bin:$PATH"
+export PATH="/opt/freedownloadmanager:$PATH"
+#export PATH="$HOME/.fzf/bin:$PATH"
+#export FZF_PATH="$HOME/.fzf/bin"
