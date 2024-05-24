@@ -5,37 +5,70 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.local/bin:/usr/local/bin:$PATH
-export PATH="/opt/riscv/bin:$PATH"
-export PATH="/opt/freedownloadmanager:$PATH"
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.config/.oh-my-zsh"
+### Added by Zinit's installer
+if [[ ! -f ${ZDOTDIR:-${HOME}}/.zcomet/bin/zcomet.zsh ]]; then
+  command git clone https://github.com/agkozak/zcomet.git ${ZDOTDIR:-${HOME}}/.zcomet/bin
+fi
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+source ${ZDOTDIR:-${HOME}}/.zcomet/bin/zcomet.zsh
+
+zcomet load zsh-users/zsh-autosuggestions
+zcomet load zsh-users/zsh-completions
+zcomet load zsh-users/zsh-syntax-highlighting
+zcomet load unixorn/fzf-zsh-plugin
+zcomet load zpm-zsh/theme-neutral
+zcomet load zpm-zsh/ls
+zcomet load fdellwing/zsh-bat
+zcomet load MichaelAquilina/zsh-you-should-use
+zcomet load romkatv/powerlevel10k
+
+zcomet load ohmyzsh plugins/common-aliases
+zcomet load ohmyzsh plugins/colorize
+zcomet load ohmyzsh plugins/gnu-utils
+zcomet load ohmyzsh plugins/sudo
+zcomet load ohmyzsh plugins/zsh-interactive-cd
+zcomet load ohmyzsh plugins/gitfast
+zcomet load ohmyzsh plugins/dirhistory
+
+eval "$(zoxide init zsh)"
+
+zcomet compinit
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+# If you come from bash you might have to change your $PATH.
+source $HOME/.path
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 HYPHEN_INSENSITIVE="true"
-# zsh essentials
-HISTFILE=".histfile"             # Save 100000 lines of history
+HISTFILE="$HOME/.config/.zsh_history"             # Save 100000 lines of history
 HISTSIZE=100000
 SAVEHIST=100000
-setopt BANG_HIST                 # Treat the '!' character specially during expansion.
-setopt EXTENDED_HISTORY          # Write the history file in the ":start:elapsed;command" format.
-setopt INC_APPEND_HISTORY        # Write to the history file immediately, not when the shell exits.
-setopt SHARE_HISTORY             # Share history between all sessions.
-setopt HIST_IGNORE_DUPS          # Don't record an entry that was just recorded again.
-setopt HIST_IGNORE_ALL_DUPS      # Delete old recorded entry if new entry is a duplicate.
-setopt HIST_IGNORE_SPACE         # Don't record an entry starting with a space.
+setopt bang_hist              # Treat the '!' character specially during expansion.
+setopt extended_history       # record timestamp of command in HISTFILE
+setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
+setopt hist_ignore_all_dups   # ignore duplicated commands history list
+setopt hist_ignore_space      # ignore commands that start with space
+setopt hist_verify            # show command with history expansion to user before running it
+setopt inc_append_history     # add commands to HISTFILE in order of execution
+setopt share_history          # share command history data
+setopt hash_list_all          # hash everything before completion
+setopt completealiases        # complete alisases
+setopt nocorrect              # spelling correction for commands
+setopt list_ambiguous         # complete as much of a completion until it gets ambiguous.
+setopt nolisttypes
+setopt listpacked
+setopt automenu
+setopt auto_cd
+unsetopt correct_all
 
 
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions fzf-zsh-plugin)
-
-source $ZSH/oh-my-zsh.sh
-
-# User configuration
+export WORDCHARS='${WORDCHARS}:'
+autoload -Uz select-word-style
+select-word-style bash
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey "^H" backward-kill-word
@@ -46,16 +79,6 @@ zstyle ':completion:*:ssh:*:users' hidden true
 
 alias vim="nvim"
 alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.config/.oh-my-zsh"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
- #disable auto correct
-unsetopt correct_all
-
-source /usr/share/doc/fzf/examples/key-bindings.zsh
-source /usr/share/doc/fzf/examples/completion.zsh
-
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias zsh_reload="source $HOME/.zshrc"
 fortune | cowsay
-
