@@ -1,0 +1,31 @@
+#!/bin/bash
+
+tmp_file="$HOME/.keyboard_layout"
+
+if [ -f "$tmp_file" ]; then
+    KEYBOARD_LAYOUT=$(<"$tmp_file")
+else
+    KEYBOARD_LAYOUT=0
+fi
+
+# Increment the KEYBOARD_LAYOUT
+KEYBOARD_LAYOUT=$(((KEYBOARD_LAYOUT + 1) % 4))
+
+case $KEYBOARD_LAYOUT in
+  0)
+  legion-kb-rgb set -e Static -c 0,0,0,0,0,0,0,0,0,0,0,0 -b Low
+  ;;
+  1)
+  legion-kb-rgb set -e Static -c 80,80,80,80,80,80,80,80,80,80,80,80 -b Low
+  ;;
+  2)
+  legion-kb-rgb set -e Static -c 200,200,200,200,200,200,200,200,200,200,200,200 -b Low
+  ;;
+  3)
+  legion-kb-rgb set -e Static -c 255,255,255,255,255,255,255,255,255,255,255,255 -b High
+  ;;
+  *)
+  ;;
+esac
+
+echo "$KEYBOARD_LAYOUT" > "$tmp_file"
