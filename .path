@@ -1,3 +1,6 @@
 export PATH=$HOME/.local/bin:/usr/local/bin:$PATH
 export PATH="/opt/riscv/bin:$PATH"
 export PATH="/opt/freedownloadmanager:$PATH"
+export PATH="/tools/intelFPGA_pro/23.1/quartus/bin:$PATH"
+export PATH="/tools/Xilinx/Vivado_Lab/2023.1/bin/:$PATH"
+export _JAVA_AWT_WM_NONREPARENTING=1
