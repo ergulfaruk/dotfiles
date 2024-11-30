@@ -81,3 +81,5 @@
 !.local/bin/change-backlight
 !.local/bin/ssh_yonca
 !.local/bin/ssh_yonca_soc
+
+dotfiles
