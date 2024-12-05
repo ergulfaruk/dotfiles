@@ -21,4 +21,6 @@ configuration {
 //@theme "/usr/share/rofi/themes/android_notification.rasi"
 //@theme "/home/omer.ergul/.local/share/rofi/themes/spotlight.rasi"
 //@theme "/home/omer.ergul/.local/share/rofi/themes/spotlight-dark.rasi"
-@theme "/usr/share/rofi/themes/android_notification.rasi"
+//@theme "/usr/share/rofi/themes/android_notification.rasi"
+//@theme "/usr/share/rofi/themes/Adapta-Nokto.rasi"
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
