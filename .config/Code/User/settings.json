@@ -39,11 +39,20 @@
       "work/dcnx*/**/*":true
     },
     "files.associations": {
-      "*.do": "tcl"
+      "*.do": "tcl",
+      "*.log": "plaintext"
     },
     "workbench.iconTheme": "gruvbox-material-icon-theme",
     "editor.stickyScroll.scrollWithEditor": false,
     "workbench.editorAssociations": {
       "*.bin": "default"
-    }
+    },
+    "folderformatter.extensions": [
+
+      "sv",
+      "v",
+      "svh",
+      "vh"
+    ],
+    "diffEditor.maxComputationTime": 0
 }

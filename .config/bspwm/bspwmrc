@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # display positions
-gamma=1.0:0.9:0.8
+gamma=1.0:0.90:0.80
 brightness=0.80
 xrandr --output DisplayPort-3 --gamma ${gamma} --brightness ${brightness} --primary --mode 1920x1080 --pos 0x0 &
 xrandr --output DisplayPort-4 --gamma ${gamma} --brightness ${brightness} --mode 1920x1080 --pos 1920x0 &
