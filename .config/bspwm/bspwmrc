@@ -5,9 +5,6 @@ gamma=1.0:0.90:0.80
 brightness=0.80
 xrandr --output DisplayPort-3 --gamma ${gamma} --brightness ${brightness} --primary --mode 1920x1080 --pos 0x0 &
 xrandr --output DisplayPort-4 --gamma ${gamma} --brightness ${brightness} --mode 1920x1080 --pos 1920x0 &
-# display bright and gamma
-# xrandr --output DisplayPort-3 --gamma 1.0:0.95:0.85 --brightness 0.70 &
-# xrandr --output DisplayPort-4 --gamma 1.0:0.95:0.85 --brightness 0.70 &
 
 pgrep -x sxhkd | xargs kill
 sxhkd &
@@ -52,8 +49,6 @@ bspc config focus_by_distance     true
 bspc config automatic_scheme spiral
 bspc config initial_polarity first_child
 bspc config removal_adjustment true
-
-# how much of the screen the "master" takes by default
 
 bspc rule -a \* center=on
 bspc rule -a Gimp desktop='^8' state=floating follow=on

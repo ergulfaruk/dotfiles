@@ -1,3 +1,5 @@
+#!/bin/bash
+
 killall -9 jtagd
 /tools/intelFPGA_pro/23.1/qprogrammer/quartus/bin/jtagd
 /tools/intelFPGA_pro/23.1/qprogrammer/quartus/bin/jtagconfig --enableremote stratix

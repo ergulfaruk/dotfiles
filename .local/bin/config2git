@@ -1,7 +1,0 @@
-#!/usr/bin/env sh
-
-cd
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
-config add $@
-config commit -m "config updated:"
-config push

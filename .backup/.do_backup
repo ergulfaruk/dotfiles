@@ -1,3 +1,0 @@
-dpkg --get-selections > ~/.backup/Package.list
-sudo cp -R /etc/apt/sources.list* ~/.backup/
-sudo apt-key exportall > ~/.backup/Repo.keys

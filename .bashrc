@@ -117,8 +117,4 @@ if ! shopt -oq posix; then
 fi
 
 shopt -s autocd
-export PATH="/opt/riscv/bin:$PATH"
-export PATH="/opt/freedownloadmanager:$PATH"
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
-eval "$(oh-my-posh init bash --config $HOME/.config/poshthemes/tokyo.omp.json)"
 

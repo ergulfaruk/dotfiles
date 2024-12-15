@@ -30,8 +30,6 @@ zcomet load ohmyzsh plugins/zsh-interactive-cd
 zcomet load ohmyzsh plugins/gitfast
 zcomet load ohmyzsh plugins/dirhistory
 
-eval "$(zoxide init zsh)"
-
 zcomet compinit
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -41,12 +39,11 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 # If you come from bash you might have to change your $PATH.
 source $HOME/.path
 
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
 HYPHEN_INSENSITIVE="true"
-HISTFILE="$HOME/.config/.zsh_history"             # Save 100000 lines of history
+HISTFILE="$HOME/.config/.zsh_history"
 HISTSIZE=100000
 SAVEHIST=100000
+
 setopt bang_hist              # Treat the '!' character specially during expansion.
 setopt extended_history       # record timestamp of command in HISTFILE
 setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
@@ -77,8 +74,7 @@ zstyle ':completion:*:ssh:*' hosts off
 zstyle ':completion:*:ssh:argument-1:*' tag-order hosts
 zstyle ':completion:*:ssh:*:users' hidden true
 
-alias vim="nvim"
 alias zshconfig="vim ~/.zshrc"
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias zsh_reload="source $HOME/.zshrc"
+
 fortune | cowsay
