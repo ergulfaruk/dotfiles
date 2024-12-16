@@ -48,11 +48,11 @@
       "*.bin": "default"
     },
     "folderformatter.extensions": [
-
       "sv",
       "v",
       "svh",
       "vh"
     ],
-    "diffEditor.maxComputationTime": 0
+    "diffEditor.maxComputationTime": 0,
+    "files.simpleDialog.enable": true
 }
