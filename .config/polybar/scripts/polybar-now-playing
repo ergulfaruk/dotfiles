@@ -24,9 +24,7 @@ control_chars = ['󰒮','','󰓛','󰒭']
 # example:
 display_player_prefix = {
     "spotify":  '',
-    "brave.instance2311":  '',
-    "firefox":  '',
-    "default":  ''
+    "default":  ''
 }
 
 # (list) : list of metadata fields based on mpris sepecification.
@@ -199,10 +197,10 @@ def print_text():
         return
     scroll()
     print( 
-        "%{F#8ec07c}"+ display_prefix + "%{F-}" + " " +
+        "%{F#aabbccdd}"+ display_prefix + "%{F-}" + " " +
         "%%{T%d}" % (font_index) +
         make_visual_len(display_text, message_display_len) +
-        "%{T-}" + "  %{F#8ec07c}"+ display_suffix + "%{F-}", flush=True)
+        "%{T-}" + "  %{F#aabbccdd}"+ display_suffix + "%{F-}", flush=True)
 
 def main():
     global current_player, players

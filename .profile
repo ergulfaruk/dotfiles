@@ -30,3 +30,8 @@ fi
 if [ -d "$HOME/.path" ] ; then
     source $HOME/.path
 fi
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/omer.ergul/.cache/lm-studio/bin"
+
+export PATH="$PATH:/home/omer.ergul/.cache/scalacli/local-repo/bin/scala-cli"

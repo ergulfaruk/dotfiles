@@ -1,6 +1,6 @@
 configuration {
  modi: "drun,combi,ssh,vnc:~/.config/rofi/remote.sh,run";
- font: "JetBrainsMono Nerd Font 12";
+ font: "Hack Nerd Font 13";
  combi-modi: "drun,ssh,vnc,run";
  show-icons: true;
  matching: "fuzzy";
@@ -11,16 +11,5 @@ configuration {
  display-ssh:"ssh";
  display-vnc:"vnc";
  }
-//@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
-//@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
-//@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
-//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
-//@theme "/usr/share/rofi/themes/Adapta-Nokto.rasi"
-//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
-//@theme "/usr/share/rofi/themes/Adapta-Nokto.rasi"
-//@theme "/usr/share/rofi/themes/android_notification.rasi"
-//@theme "/home/omer.ergul/.local/share/rofi/themes/spotlight.rasi"
-//@theme "/home/omer.ergul/.local/share/rofi/themes/spotlight-dark.rasi"
-//@theme "/usr/share/rofi/themes/android_notification.rasi"
-//@theme "/usr/share/rofi/themes/Adapta-Nokto.rasi"
-@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+//@theme "~/.config/rofi/rofi_theme.rasi"
+@theme "/usr/share/rofi/themes/android_notification.rasi"

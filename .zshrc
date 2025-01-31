@@ -78,3 +78,12 @@ alias zshconfig="vim ~/.zshrc"
 alias zsh_reload="source $HOME/.zshrc"
 
 fortune | cowsay
+
+PATH="/home/omer.ergul/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/omer.ergul/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/omer.ergul/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/omer.ergul/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/omer.ergul/perl5"; export PERL_MM_OPT;
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/omer.ergul/.cache/lm-studio/bin"

@@ -118,3 +118,6 @@ fi
 
 shopt -s autocd
 
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/omer.ergul/.cache/lm-studio/bin"

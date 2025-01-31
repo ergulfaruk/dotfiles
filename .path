@@ -4,3 +4,5 @@ export PATH="/opt/freedownloadmanager:$PATH"
 export PATH="/tools/intelFPGA_pro/23.1/quartus/bin:$PATH"
 export PATH="/tools/Xilinx/Vivado_Lab/2023.1/bin/:$PATH"
 export _JAVA_AWT_WM_NONREPARENTING=1
+export PATH="$PATH:/home/omer.ergul/.cache/scalacli/local-repo/bin/scala-cli"
+export QUARTUS_ROOTDIR="/tools/intelFPGA_pro/23.1/quartus" 

@@ -15,7 +15,7 @@
     "explorer.confirmDelete": false,
     "workbench.productIconTheme": "fluent-icons",
     "workbench.sideBar.location": "right",
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "Ayu Dark (Legacy)",
     "workbench.tree.enableStickyScroll": false,
     "workbench.editorLargeFileConfirmation": 100,
     "workbench.startupEditor": "none",
@@ -42,7 +42,7 @@
       "*.do": "tcl",
       "*.log": "plaintext"
     },
-    "workbench.iconTheme": "gruvbox-material-icon-theme",
+    "workbench.iconTheme": "vs-nomo-dark",
     "editor.stickyScroll.scrollWithEditor": false,
     "workbench.editorAssociations": {
       "*.bin": "default"
@@ -54,5 +54,8 @@
       "svh",
       "vh"
     ],
-    "diffEditor.maxComputationTime": 0
+    "diffEditor.maxComputationTime": 0,
+    "hediet.vscode-drawio.resizeImages": null,
+    "files.simpleDialog.enable": true,
+    "security.workspace.trust.untrustedFiles": "open"
 }
