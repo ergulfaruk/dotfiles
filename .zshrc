@@ -76,6 +76,8 @@ zstyle ':completion:*:ssh:*:users' hidden true
 
 alias zshconfig="vim ~/.zshrc"
 alias zsh_reload="source $HOME/.zshrc"
+alias tm="tmux"
+alias tma="tmux a"
 
 fortune | cowsay
 
