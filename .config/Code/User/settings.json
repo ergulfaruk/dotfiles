@@ -57,5 +57,8 @@
     "diffEditor.maxComputationTime": 0,
     "hediet.vscode-drawio.resizeImages": null,
     "files.simpleDialog.enable": true,
-    "security.workspace.trust.untrustedFiles": "open"
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.commandCenter": false,
+    "window.customTitleBarVisibility": "never",
+    "window.titleBarStyle": "native"
 }
