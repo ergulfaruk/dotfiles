@@ -3,7 +3,7 @@ yonca_t0:
       ratio: 0.5
       panes:
         - cmd: ssh -t tutelserver0 "cd ~/Desktop/yonca/work; zsh --login"
-        - cmd: ssh -t tutelserver0 "cd ~/Desktop/yonca/submodules/verification; zsh --login"
+        - cmd: ssh -t tutelserver0 "cd ~/Desktop/yonca/work; zsh --login"
 
 yonca_soc_t0:
   - vertical:
@@ -17,7 +17,7 @@ yonca_t1:
       ratio: 0.5
       panes:
         - cmd: ssh -t tutelserver1 "cd ~/Desktop/yonca/work; zsh --login"
-        - cmd: ssh -t tutelserver1 "cd ~/Desktop/yonca/submodules/verification; zsh --login"
+        - cmd: ssh -t tutelserver1 "cd ~/Desktop/yonca/work; zsh --login"
 
 yonca_soc_t1:
   - vertical:
@@ -31,7 +31,7 @@ yonca_t5:
       ratio: 0.5
       panes:
         - cmd: ssh -t tutelserver5 "cd ~/Desktop/yonca/work; zsh --login"
-        - cmd: ssh -t tutelserver5 "cd ~/Desktop/yonca/submodules/verification; zsh --login"
+        - cmd: ssh -t tutelserver5 "cd ~/Desktop/yonca/work; zsh --login"
 
 yonca_soc_t5:
   - vertical:
@@ -45,4 +45,4 @@ yonca_t3:
       ratio: 0.5
       panes:
         - cmd: ssh -t tutelserver3 "cd ~/Desktop/yonca/work; zsh --login"
-        - cmd: ssh -t tutelserver3 "cd ~/Desktop/yonca/submodules/verification; zsh --login"
+        - cmd: ssh -t tutelserver3 "cd ~/Desktop/yonca/work; zsh --login"

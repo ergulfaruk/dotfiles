@@ -21,7 +21,7 @@ numlockx on &
 
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    bspc monitor $m -d 1 2 3 4
+    bspc monitor $m -d 1 2 3 4 5 6
   done
 fi
 

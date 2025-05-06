@@ -43,7 +43,7 @@
     [[[terminal4]]]
       parent = vpaned2
       type = Terminal
-      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver1 \"cd ~/Desktop/yonca/submodules/verification; zsh --login\""'
+      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver1 \"cd ~/Desktop/yonca/work; zsh --login\""'
       profile = default
       order = 1
   [[yonca_t3]]
@@ -65,7 +65,7 @@
     [[[terminal4]]]
       parent = vpaned2
       type = Terminal
-      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver3 \"cd ~/Desktop/yonca/submodules/verification; zsh --login\""'
+      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver3 \"cd ~/Desktop/yonca/work; zsh --login\""'
       profile = default
       order = 1
   [[yonca_soc_t1]]
@@ -109,7 +109,7 @@
     [[[terminal4]]]
       parent = vpaned2
       type = Terminal
-      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver5 \"cd ~/Desktop/yonca/submodules/verification; zsh --login\""'
+      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver5 \"cd ~/Desktop/yonca/work; zsh --login\""'
       profile = default
       order = 1
   [[yonca_soc_t5]]
@@ -153,7 +153,7 @@
     [[[terminal4]]]
       parent = vpaned2
       type = Terminal
-      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver0 \"cd ~/Desktop/yonca/submodules/verification; zsh --login\""'
+      command = 'bash -c "trap $SHELL EXIT; ssh -t tutelserver0 \"cd ~/Desktop/yonca/work; zsh --login\""'
       profile = default
       order = 1
   [[yonca_soc_t0]]

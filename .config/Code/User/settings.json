@@ -1,7 +1,6 @@
 {
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.tabSize": 2,
-    "editor.minimap.enabled": false,
     "extensions.ignoreRecommendations": true,
     "git.confirmSync": false,
     "git.suggestSmartCommit": false,
@@ -21,7 +20,7 @@
     "workbench.startupEditor": "none",
     "git.autofetch": true,
     "remote.SSH.useExecServer": false,
-    "systemverilog.formatCommand": "verible-verilog-format --column_limit 200 --assignment_statement_alignment infer --case_items_alignment align --module_net_variable_alignment align --named_parameter_alignment align --named_port_alignment align --named_port_indentation wrap --port_declarations_alignment infer",
+    "systemverilog.formatCommand": "verible-verilog-format --column_limit 250 --assignment_statement_alignment infer --case_items_alignment align --module_net_variable_alignment align --named_parameter_alignment align --named_port_alignment align --named_port_indentation wrap --port_declarations_alignment infer",
     "systemverilog.excludeIndexing": "**/*.v",
     "editor.detectIndentation": false,
     "files.autoSave": "afterDelay",
@@ -60,5 +59,10 @@
     "security.workspace.trust.untrustedFiles": "open",
     "window.commandCenter": false,
     "window.customTitleBarVisibility": "never",
-    "window.titleBarStyle": "native"
+    "window.titleBarStyle": "custom",
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "git.openRepositoryInParentFolders": "never",
+    "chat.commandCenter.enabled": false,
+    "editor.minimap.enabled": false,
+    "remote.SSH.externalSSH_ASKPASS": true
 }

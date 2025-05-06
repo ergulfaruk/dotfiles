@@ -21,6 +21,7 @@ zcomet load zpm-zsh/ls
 zcomet load fdellwing/zsh-bat
 zcomet load MichaelAquilina/zsh-you-should-use
 zcomet load romkatv/powerlevel10k
+zcomet load ajeetdsouza/zoxide
 
 zcomet load ohmyzsh plugins/common-aliases
 zcomet load ohmyzsh plugins/colorize
@@ -76,7 +77,6 @@ zstyle ':completion:*:ssh:*:users' hidden true
 
 alias zshconfig="vim ~/.zshrc"
 alias zsh_reload="source $HOME/.zshrc"
-alias tm="tmux"
-alias tma="tmux a"
 
+eval "$(zoxide init zsh)"
 fortune | cowsay

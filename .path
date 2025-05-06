@@ -4,5 +4,8 @@ export PATH="/opt/freedownloadmanager:$PATH"
 export PATH="/tools/intelFPGA_pro/23.1/quartus/bin:$PATH"
 export PATH="/tools/Xilinx/Vivado_Lab/2023.1/bin/:$PATH"
 export _JAVA_AWT_WM_NONREPARENTING=1
-export PATH="$PATH:/home/omer.ergul/.cache/scalacli/local-repo/bin/scala-cli"
 export QUARTUS_ROOTDIR="/tools/intelFPGA_pro/23.1/quartus" 
+
+vnc () {
+  xtigervncviewer $1:$(ssh $1 "vncserver -list | sed -n '3,$$s/^:\([0-9]\+\).*/\1/p'") -passwd ~/.vnc/passwd &
+}
