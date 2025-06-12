@@ -1,7 +1,22 @@
 #!/bin/sh
 
+# Unset session manager to avoid conflicts
+unset SESSION_MANAGER
+unset DBUS_SESSION_BUS_ADDRESS
+
+# Start D-Bus session
+if [ -z "$DBUS_SESSION_BUS_ADDRESS" ]; then
+    eval $(dbus-launch --sh-syntax --exit-with-session)
+fi
+
+# Set up environment variables
+export XDG_RUNTIME_DIR=/run/user/$(id -u)
+
+# Set root window background
 xsetroot -solid grey &
+
+# Allow local user access
 xhost +si:localuser:$USER &
-#systemctl --user mask xdg-desktop-portal-gnome.service &
-#systemctl --user mask xdg-desktop-portal-gtk.service &
-bspwm 
+
+# Start bspwm
+exec bspwm

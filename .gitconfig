@@ -1,3 +1,5 @@
 [user]
 	email = ergulfaruk@icloud.com
 	name = ergulfaruk
+[http]
+	sslverify = false

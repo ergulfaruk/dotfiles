@@ -1,2 +1,2 @@
 #!/bin/bash
-xtigervncviewer 10.40.34.39:87 -passwd ~/.vnc/passwd &
+xtigervncviewer 10.40.34.39:1 -passwd ~/.vnc/passwd &
