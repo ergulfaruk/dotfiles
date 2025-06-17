@@ -19,7 +19,7 @@ zcomet load unixorn/fzf-zsh-plugin
 zcomet load zpm-zsh/theme-neutral
 zcomet load zpm-zsh/ls
 zcomet load fdellwing/zsh-bat
-zcomet load MichaelAquilina/zsh-you-should-use
+#zcomet load MichaelAquilina/zsh-you-should-use
 zcomet load romkatv/powerlevel10k
 zcomet load ajeetdsouza/zoxide
 

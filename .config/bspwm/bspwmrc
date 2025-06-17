@@ -15,7 +15,7 @@ nitrogen --restore &
 pgrep -x picom | xargs kill
 picom &
 
-lxpolkit &
+#lxpolkit &
 xsetroot -cursor_name left_ptr &
 numlockx on &
 
